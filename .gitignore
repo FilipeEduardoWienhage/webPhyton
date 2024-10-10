@@ -1,0 +1,26 @@
+# Ignorar o ambiente virtual
+env/
+venv/
+*.pyc
+__pycache__/
+
+# Ignorar arquivos do sistema
+*.DS_Store
+*.log
+*.sqlite3
+
+# Ignorar chaves e credenciais sensíveis
+.env
+*.env
+
+# Ignorar diretórios de IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos de migração que podem ser recriados
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Ignorar arquivos de cache do Django
+staticfiles/
+media/
