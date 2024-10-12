@@ -13,4 +13,6 @@ urlpatterns = [
     path("/contato", views.contato),
     path("/calculadora", views.calculadora),
     path("/calcular", views.calcular),
+    path("/aluno", views.aluno),
+    path("/calcular-media", views.media)
 ]

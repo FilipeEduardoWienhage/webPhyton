@@ -4,14 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <style>
+        /* Estilização geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Barra de navegação */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Parágrafo de conteúdo */
+        p {
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="/sistema/contato">Contato</a>
-    <a href="/sistema/calculadora">Calculadora</a>
-    <h1>Olá mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ipsum, quo perferendis aut doloribus officia maxime rerum quod voluptate quia libero hic saepe iure voluptas minus! Veniam exercitationem maxime expedita.
-    Error, qui iste? Unde, aspernatur! Aliquid sunt ipsum dolorem quo, incidunt consequatur pariatur mollitia quisquam fuga consectetur, sit in repudiandae atque quidem! Ullam voluptate recusandae nostrum quod quaerat, totam ut.</p>
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="/sistema/contato">Contato</a></li>
+            <li><a href="/sistema/calculadora">Calculadora</a></li>
+            <li><a href="/sistema/aluno">Calcula Média</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título principal -->
+    <h1>Funções</h1>
+
+    <!-- Parágrafos de conteúdo -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ipsum, quo perferendis aut doloribus officia maxime rerum quod voluptate quia libero hic saepe iure voluptas minus! Veniam exercitationem maxime expedita.</p>
+    
+    <p>Error, qui iste? Unde, aspernatur! Aliquid sunt ipsum dolorem quo, incidunt consequatur pariatur mollitia quisquam fuga consectetur, sit in repudiandae atque quidem! Ullam voluptate recusandae nostrum quod quaerat, totam ut.</p>
 </body>
 </html>

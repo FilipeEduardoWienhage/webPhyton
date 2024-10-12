@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilização geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo do contêiner principal */
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Título principal */
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo dos parágrafos */
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Cor personalizada para o status */
+        p:last-child {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Média</h1>
+        <p>A média é: {{media}}</p>
+        <p>A situação é: {{status}}</p>
+    </div>
+</body>
+</html>
